@@ -16,56 +16,57 @@ const ingredients = [
                       console.log(markup)
   list.insertAdjacentHTML("afterend",markup);
   
+  console.log(markup)
 
-  const ingredients = [
-    "Potatoes",
-    "Mushrooms",
-    "Garlic",
-    "Tomatos",
-    "Herbs",
-    "Condiments",
-  ];
+//   const ingredients = [
+//     "Potatoes",
+//     "Mushrooms",
+//     "Garlic",
+//     "Tomatos",
+//     "Herbs",
+//     "Condiments",
+//   ];
   
-  Напиши скрипт, который для каждого элемента массива ingredients:
+//   Напиши скрипт, который для каждого элемента массива ingredients:
   
-      Создаст отдельный элемент <li>. Обзательно используй метод document.createElement().
-      Добавит название ингредиента как его текстовое содержимое.
-      Добавит элементу класс item.
-      После чего вставит все <li> за одну операцию в список ul.ingredients.
+//       Создаст отдельный элемент <li>. Обзательно используй метод document.createElement().
+//       Добавит название ингредиента как его текстовое содержимое.
+//       Добавит элементу класс item.
+//       После чего вставит все <li> за одну операцию в список ul.ingredients.
   
-  Задание 3
+//   Задание 3
 
-  const planets = ["Земля", "Марс", "Венера", "Юпитер"];
+//   const planets = ["Земля", "Марс", "Венера", "Юпитер"];
 
-const planetsInUpperCase = planets.map(planet => planet.toUpperCase());
-console.log(planetsInUpperCase); // ['ЗЕМЛЯ', 'МАРС', 'ВЕНЕРА', 'ЮПИТЕР']
+// const planetsInUpperCase = planets.map(planet => planet.toUpperCase());
+// console.log(planetsInUpperCase); // ['ЗЕМЛЯ', 'МАРС', 'ВЕНЕРА', 'ЮПИТЕР']
 
-const planetsInLowerCase = planets.map(planet => planet.toLowerCase());
-console.log(planetsInLowerCase); // ['земля', 'марс', 'венера', 'юпитер']
+// const planetsInLowerCase = planets.map(planet => planet.toLowerCase());
+// console.log(planetsInLowerCase); // ['земля', 'марс', 'венера', 'юпитер']
 
-____________________________________________________
+// ____________________________________________________
 
-const ingredients = [
-  'Potatoes',
-  'Mushrooms',
-  'Garlic',
-  'Tomatos',
-  'Herbs',
-  'Condiments',
-];
+// const ingredients = [
+//   'Potatoes',
+//   'Mushrooms',
+//   'Garlic',
+//   'Tomatos',
+//   'Herbs',
+//   'Condiments',
+// ];
 
-const list = document.querySelector("#ingredients")
-                    console.log(list);
-
-
-const textEl = ingredients[0];
-console.log(textEl)
+// const list = document.querySelector("#ingredients")
+//                     console.log(list);
 
 
-const liEl = document.createElement('li');
-liEl.textContent = textEl;
+// const textEl = ingredients[0];
+// console.log(textEl)
 
-console.log(liEl)
+
+// const liEl = document.createElement('li');
+// liEl.textContent = textEl;
+
+// console.log(liEl)
 
 
 
