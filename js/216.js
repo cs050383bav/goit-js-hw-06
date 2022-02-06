@@ -1,80 +1,11 @@
-const ingredients = [
-    'Potatoes',
-    'Mushrooms',
-    'Garlic',
-    'Tomatos',
-    'Herbs',
-    'Condiments',
-  ];
-  
-  const list = document.querySelector("#ingredients")
-                      console.log(list);
-  
- 
-  const markup = ingredients
-    .map((ingredient) => `<li class="item">${ingredient}</li>`).join("");
-                      console.log(markup)
-  list.insertAdjacentHTML("afterend",markup);
-  
-  console.log(markup)
+Счетчик состоит из спана и кнопок, которые, при клике, должны увеличивать и уменьшать его значение на единицу.
 
-//   const ingredients = [
-//     "Potatoes",
-//     "Mushrooms",
-//     "Garlic",
-//     "Tomatos",
-//     "Herbs",
-//     "Condiments",
-//   ];
-  
-//   Напиши скрипт, который для каждого элемента массива ingredients:
-  
-//       Создаст отдельный элемент <li>. Обзательно используй метод document.createElement().
-//       Добавит название ингредиента как его текстовое содержимое.
-//       Добавит элементу класс item.
-//       После чего вставит все <li> за одну операцию в список ul.ingredients.
-  
-//   Задание 3
+<div id="counter">
+  <button type="button" data-action="decrement">-1</button>
+  <span id="value">0</span>
+  <button type="button" data-action="increment">+1</button>
+</div>
 
-//   const planets = ["Земля", "Марс", "Венера", "Юпитер"];
-
-// const planetsInUpperCase = planets.map(planet => planet.toUpperCase());
-// console.log(planetsInUpperCase); // ['ЗЕМЛЯ', 'МАРС', 'ВЕНЕРА', 'ЮПИТЕР']
-
-// const planetsInLowerCase = planets.map(planet => planet.toLowerCase());
-// console.log(planetsInLowerCase); // ['земля', 'марс', 'венера', 'юпитер']
-
-// ____________________________________________________
-
-// const ingredients = [
-//   'Potatoes',
-//   'Mushrooms',
-//   'Garlic',
-//   'Tomatos',
-//   'Herbs',
-//   'Condiments',
-// ];
-
-// const list = document.querySelector("#ingredients")
-//                     console.log(list);
-
-
-// const textEl = ingredients[0];
-// console.log(textEl)
-
-
-// const liEl = document.createElement('li');
-// liEl.textContent = textEl;
-
-// console.log(liEl)
-
-
-
-
-
-// Напиши скрипт, который для каждого элемента массива ingredients:
-
-//     Создаст отдельный элемент <li>. Обзательно используй метод document.createElement().
-//     Добавит название ингредиента как его текстовое содержимое.
-//     Добавит элементу класс item.
-//     После чего вставит все <li> за одну операцию в список ul.ingredients.
+    Создай переменную counterValue в которой будет храниться текущее значение счетчика и инициализируй её значением 0.
+    Добавь слушатели кликов на кнопки, внутри которых увеличивай или уменьшай значение счтетчика.
+    Обновляй интерфейс новым значением переменной counterValue.
