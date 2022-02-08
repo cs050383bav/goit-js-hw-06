@@ -4,13 +4,13 @@ const inputPassword = document.querySelector ('input[name="password"]');
 const inputButton = document.querySelector ('button');
 
 formEl.addEventListener('submit',(event)=>{
-    inputEmail.value===""||inputPassword.value===""?
-    (alert("Заполните, пожалуйста, поля: Email и Password!"), event.preventDefault()):
-
+    if (inputEmail.value===""||inputPassword.value==="")
+    {(alert("Заполните, пожалуйста, поля: Email и Password!"), event.preventDefault())}
+else{
     event.preventDefault();
     const {elements:{email,password}} = event.currentTarget;
     console.log(email.value, password.value);
-    formEl.reset();
+    formEl.reset();}
 }
 )
 
